@@ -1,0 +1,83 @@
+/* Google Font: Poppins */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 1.5rem 0;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #00cc66;
+    color: #003366;
+}
+
+/* Main layout */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: #003366;
+    font-size: 2rem;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 1rem;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
