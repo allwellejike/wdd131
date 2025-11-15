@@ -1,19 +1,12 @@
-// Dynamic Year
-document.querySelector("#year").textContent = new Date().getFullYear();
+// Hamburger Menu Toggle
+const button = document.getElementById("hamburger");
+const menu = document.getElementById("nav-menu");
 
-// Last Modified
-document.querySelector("#last-modified").textContent = document.lastModified;
-
-// Hamburger Menu
-const menuBtn = document.querySelector("#menu-btn");
-const navMenu = document.querySelector("#nav-menu");
-
-menuBtn.addEventListener("click", () => {
-  if (navMenu.style.display === "flex") {
-    navMenu.style.display = "none";
-    menuBtn.textContent = "☰";
-  } else {
-    navMenu.style.display = "flex";
-    menuBtn.textContent = "✖";
-  }
+button.addEventListener("click", () => {
+  menu.classList.toggle("open");
+  button.textContent = menu.classList.contains("open") ? "X" : "☰";
 });
+
+// Footer Dates
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
