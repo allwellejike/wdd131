@@ -5,12 +5,14 @@
     display: none;
   }
 
+  /* Nav horizontal */
   nav {
     display: flex !important;
     flex-direction: row;
     gap: 1rem;
   }
 
+  /* Grid layout for 3 columns */
   main {
     grid-template-columns: repeat(3, 1fr);
   }
