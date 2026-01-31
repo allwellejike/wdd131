@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Place Page</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script defer src="scripts/place.js"></script>
+</head>
+<body>
+  <header class="top-nav">
+    <div class="brand">My Country</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Culture</a>
+      <a href="#">Food</a>
+      <a href="#">Travel</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+        <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
+        <img src="images/hero-small.webp" alt="Beautiful landscape of my country" width="1500" height="750">
+      </picture>
+      <div class="hero-text">
+        <h1>Welcome to My Favorite Place</h1>
+        <p>Discover the culture, landscapes, and history of this amazing destination.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <article class="about">
+        <h2>About the Country</h2>
+        <p>
+          This country is known for its beautiful landscapes, friendly people, and rich cultural heritage.
+          It has a diverse climate and a long history of tradition.
+        </p>
+      </article>
+
+      <aside class="weather">
+        <h2>Weather <span class="weather-icon">⛅</span></h2>
+        <p class="temp">Temperature: <span id="temp">45°F</span></p>
+        <p class="wind">Wind Speed: <span id="wind">10 mph</span></p>
+        <p class="windchill">Wind Chill: <span id="windchill">Calculating...</span></p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> My Country Page</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
