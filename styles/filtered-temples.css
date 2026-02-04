@@ -5,6 +5,18 @@
   --text-dark: #0f172a;
 }
 
+/* Default styles (for small screens) */
+body {
+  font-size: 16px;
+}
+
+/* Media query for screens wider than 768px (like tablets/desktops) */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 20px; /* Increase font on larger screens */
+  }
+}
+
 * {
   box-sizing: border-box;
 }
