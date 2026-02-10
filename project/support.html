@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit tech support requests and learn simple tips for devices and web development.">
+    <meta name="author" content="Allwell Ejike">
+    <title>Tech Support</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Technology Support</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Request Support</h2>
+
+        <form id="supportForm">
+            <label for="name">Name *</label>
+            <input type="text" id="name" required>
+
+            <label for="issue">Issue *</label>
+            <select id="issue" required>
+                <option value="">Select an issue</option>
+                <option value="computer">Computer</option>
+                <option value="mobile">Mobile Device</option>
+                <option value="web">Web Development</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Personal Technology Support & Learning Hub</p>
+</footer>
+
+</body>
+</html>
