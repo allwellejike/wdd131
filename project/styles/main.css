@@ -1,3 +1,11 @@
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+
 :root {
     --primary-color: #1E3A8A;
     --secondary-color: #F1F5F9;
@@ -69,4 +77,9 @@ button {
     border: none;
     padding: 0.75rem;
     cursor: pointer;
+}
+
+button:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
 }
